@@ -1,0 +1,65 @@
+---
+title: "Número de Reproducción Efectivo dependiente del tiempo (Rt)"
+output: 
+  html_document: 
+    css: style.css
+lang: es-CO
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(gt)
+library(reactable)
+library(repmis)
+library(dplyr)
+library(knitr)
+
+source("code/graficos_latam.R")
+
+Sys.setlocale(locale = "es_ES.UTF-8")
+```
+
+<center><h2>Número de reproducción dependiente del tiempo (Rt) en la última semana en base a **casos confirmados**</h2></center>
+<center><h4>Gráfico interactivo: Pase el mouse sobre el gráfico para mayor información.</h4></center>
+<br>
+```{r, include = T, echo = F}
+rt_confirmados
+```
+
+<br>
+<br>
+<br>
+<center><h2>Número de reproducción dependiente del tiempo (Rt) en la última semana en base a  **fallecidos**</h2></center>
+<center><h4>Gráfico interactivo: Pase el mouse sobre el gráfico para mayor información.</h4></center>
+<br>
+```{r, include = T, echo = F}
+rt_fallecidos
+```
+<br>
+<br>
+<br>
+<center><h2>Serie de tiempo del número de reproducción dependiente del tiempo (Rt) por semana y por país desde el primer confirmado y fallecido  </h2></center>
+<center><h4>Gráfico interactivo: Pase el mouse sobre el gráfico para mayor información.Puede desactivar las categoría de confirmados o fallecidos</h4></center>
+<br>
+```{r, include = T, echo = F}
+graficos[[1]]
+graficos[[2]]
+graficos[[3]]
+graficos[[4]]
+graficos[[5]]
+graficos[[6]]
+graficos[[7]]
+graficos[[8]]
+graficos[[9]]
+graficos[[10]]
+graficos[[11]]
+graficos[[12]]
+graficos[[13]]
+graficos[[14]]
+graficos[[15]]
+graficos[[16]]
+graficos[[17]]
+graficos[[19]]
+graficos[[19]]
+graficos[[20]]
+```
