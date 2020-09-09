@@ -19,7 +19,10 @@ source("code/graficos_latam.R")
 Sys.setlocale(locale = "es_ES.UTF-8")
 ```
 
-<center><h2>Número de reproducción dependiente del tiempo (Rt) en la última semana en base a **casos confirmados**</h2></center>
+<h2 style = color: #000000;>
+    Número de reproducción dependiente del tiempo <span style = "color: #e61b72">(Rt)</span> en la última semana en base a <span style = "color: #e61b72">casos confirmados</span>
+</h2>
+
 <center><h4>Gráfico interactivo: Pase el mouse sobre el gráfico para mayor información.</h4></center>
 <br>
 ```{r, include = T, echo = F}
@@ -29,7 +32,11 @@ rt_confirmados
 <br>
 <br>
 <br>
-<center><h2>Número de reproducción dependiente del tiempo (Rt) en la última semana en base a  **fallecidos**</h2></center>
+
+<h2 style = color: #000000;>
+    Número de reproducción dependiente del tiempo <span style = "color: #e61b72">(Rt)</span> en la última semana en base a <span style = "color: #e61b72">fallecidos</span>
+</h2>
+
 <center><h4>Gráfico interactivo: Pase el mouse sobre el gráfico para mayor información.</h4></center>
 <br>
 ```{r, include = T, echo = F}
@@ -38,7 +45,11 @@ rt_fallecidos
 <br>
 <br>
 <br>
-<center><h2>Serie de tiempo del número de reproducción dependiente del tiempo (Rt) por semana y por país desde el primer confirmado y fallecido  </h2></center>
+
+<h2 style = color: #000000;>
+    Serie de tiempo del número de reproducción dependiente del tiempo <span style = "color: #e61b72">(Rt)</span> por semana y por país desde el primer <span style = "color: #e61b72">confirmado y fallecido</span>
+</h2>
+
 <center><h4>Gráfico interactivo: Pase el mouse sobre el gráfico para mayor información.Puede desactivar las categoría de confirmados o fallecidos</h4></center>
 <br>
 ```{r, include = T, echo = F}

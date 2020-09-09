@@ -75,7 +75,7 @@ rt_tiempo <- function(.data) {
         lineWidth = 3
       )
     ) %>% 
-    hc_chart(style = list(fontFamily = "Source Code Pro")) %>%
+    hc_chart(style = list(fontFamily = "Open Sans")) %>%
     hc_tooltip(enabled = T, valueDecimals = 3, borderWidth = 0.01,
                pointFormat=paste("<b>{point.pais_nombre_corto}</b><br>
                                Rt: <b>{point.promedio}</b><br>

@@ -67,7 +67,7 @@ highchart() %>%
                 stemWidth = 3,  whiskerLength = 0) %>% 
   hc_add_series(data = aa, "scatter", hcaes(x = pais_o_region, y = promedio), 
                 color = "#CB1724", name = "Rt", linkedTo = "error") %>% 
-  hc_chart(style = list(fontFamily = "Source Code Pro")) %>% 
+  hc_chart(style = list(fontFamily = "Open Sans")) %>% 
   hc_plotOptions(
     scatter = list(
       marker = list(radius = 7, enabled = T, symbol = "circle"),
@@ -90,7 +90,7 @@ highchart() %>%
                                Día de inicio de medición: <b>{point.dia_de_inicio}</b><br>
                                Día de cierre de medición: <b>{point.dia_de_cierre}</b><br>"), 
              headerFormat = "<b>{point.pais_o_region}</b>", 
-             style = list(fontFamily = "Source Code Pro")) -> rt_confirmados 
+             style = list(fontFamily = "Open Sans")) -> rt_confirmados 
   # htmlwidgets::saveWidget(here::here("img/rt_latam_confirmados.html"))
 
 # rt para fallecidos
@@ -125,7 +125,7 @@ highchart() %>%
                 stemWidth = 3,  whiskerLength = 0) %>% 
   hc_add_series(data = aa, "scatter", hcaes(x = pais_o_region, y = promedio), 
                 color = "#09283C", name = "Rt", linkedTo = "error") %>% 
-  hc_chart(style = list(fontFamily = "Source Code Pro")) %>% 
+  hc_chart(style = list(fontFamily = "Open Sans")) %>% 
   hc_plotOptions(
     scatter = list(
       marker = list(radius = 7, enabled = T, symbol = "circle"),
