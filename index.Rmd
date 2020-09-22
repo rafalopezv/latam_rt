@@ -20,21 +20,34 @@ Sys.setlocale(locale = "es_ES.UTF-8")
 ```
 
 <h2 style = color: #000000;>
-    Número de reproducción dependiente del tiempo <span style = "color: #e61b72">(Rt)</span> en la última semana en base a <span style = "color: #e61b72">casos confirmados</span>
+    Número de reproducción dependiente del tiempo <span style = "color: #e61b72"><b>(Rt)</b></span> en la última semana en base a <span style = "color: #e61b72"><b>casos confirmados</b></span>
 </h2>
+<br>
+<small>En esta sección se presenta el cálculo semanal del Número de Reproducción Efectivo dependiente del tiempo (Rt). El cálculo se actualiza cada semana y se efectúa con el reporte oficial de personas fallecidas e infectadas.
 
+Para el calculó del Rt, el inicio de la semana está dado por el reporte del primer fallecido e infectado en cada país. Desde allí, cada semana se comprende como los 7 días siguientes.
+
+Rt muestra la velocidad de propagación semanal del virus. Un **Rt = 1**, muestra que durante esa semana la epidemia no creció exponencialmente y se estabilizó; un Rt <1, sugiere que en esa semana la epidemia estuvo en declive y bajo “control”, y un **Rt > 1** sugiere que en la semana la epidemia tuvo un crecimiento exponencial y puede considerarse “fuera de control”. En la pandemia actual, se debe mirar hacia Rt para evaluar la transmisión viral, lo que importa es obtener un **Rt < 1** de forma consistente, semana tras semana, hasta extinguir la epidemia.
+
+¿Cuál es la diferencia entre R0 y Rt? Mientras que R0 describe el potencial de propagación inicial de una infección en una población completamente susceptible, el número reproductivo efectivo, Rt, captura la transmisión una vez que el virus se propaga y a medida que se inician las medidas de contención.
+
+Vea [**aquí**](https://rafalopezv.io/static/avina/anexo_jcb_rlv.pdf) un una explicación metodológica más completa.</small>
+<br>
+<br>
+<br>
 <center><h4>Gráfico interactivo: Pase el mouse sobre el gráfico para mayor información.</h4></center>
 <br>
 ```{r, include = T, echo = F}
 rt_confirmados
 ```
-
-<br>
+<small><small><small>
+Elaboración propia con base en los datos de [Jhons Hopkins University](https://github.com/CSSEGISandData/COVID-19)
+</small></small></small>
 <br>
 <br>
 
 <h2 style = color: #000000;>
-    Número de reproducción dependiente del tiempo <span style = "color: #e61b72">(Rt)</span> en la última semana en base a <span style = "color: #e61b72">fallecidos</span>
+    Número de reproducción dependiente del tiempo <span style = "color: #e61b72"><b>(Rt)</b></span> en la última semana en base a <span style = "color: #e61b72"><b>fallecidos</b></span>
 </h2>
 
 <center><h4>Gráfico interactivo: Pase el mouse sobre el gráfico para mayor información.</h4></center>
@@ -42,12 +55,15 @@ rt_confirmados
 ```{r, include = T, echo = F}
 rt_fallecidos
 ```
+<small><small><small>
+Elaboración propia con base en los datos de [Jhons Hopkins University](https://github.com/CSSEGISandData/COVID-19)
+</small></small></small>
 <br>
 <br>
 <br>
 
 <h2 style = color: #000000;>
-    Serie de tiempo del número de reproducción dependiente del tiempo <span style = "color: #e61b72">(Rt)</span> por semana y por país desde el primer <span style = "color: #e61b72">confirmado y fallecido</span>
+    Serie de tiempo del número de reproducción dependiente del tiempo <span style = "color: #e61b72"><b>(Rt)</b></span> por semana y por país desde el primer <span style = "color: #e61b72"><b>confirmado y fallecido</b></span>
 </h2>
 
 <center><h4>Gráfico interactivo: Pase el mouse sobre el gráfico para mayor información.Puede desactivar las categoría de confirmados o fallecidos</h4></center>
@@ -74,3 +90,6 @@ graficos[[19]]
 graficos[[19]]
 graficos[[20]]
 ```
+<small><small><small>
+Elaboración propia con base en los datos de [Jhons Hopkins University](https://github.com/CSSEGISandData/COVID-19)
+</small></small></small>
