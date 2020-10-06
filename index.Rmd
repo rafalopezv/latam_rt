@@ -31,7 +31,7 @@ Rt muestra la velocidad de propagación semanal del virus. Un **Rt = 1**, muestr
 
 ¿Cuál es la diferencia entre R0 y Rt? Mientras que R0 describe el potencial de propagación inicial de una infección en una población completamente susceptible, el número reproductivo efectivo, Rt, captura la transmisión una vez que el virus se propaga y a medida que se inician las medidas de contención.
 
-Vea [**aquí**](https://rafalopezv.io/static/avina/anexo_jcb_rlv.pdf) un una explicación metodológica más completa.</small>
+Vea [**aquí**](https://rafalopezv.io/static/avina/anexo_metodologico_espanol.pdf) un una explicación metodológica más completa.</small>
 <br>
 <br>
 <br>
