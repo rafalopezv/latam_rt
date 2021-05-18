@@ -44,6 +44,7 @@ df_mundo %>%
 temp %>% 
   group_split(base, pais_region) -> temp_latam
 
+
 # aplicar funciones: epistim_intervalo_1 == ICL
 furrr::future_map(temp_latam, epistim_intervalo_1, .progress = T) %>% bind_rows() -> estim_1_latam
 
